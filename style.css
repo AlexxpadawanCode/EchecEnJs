@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0 auto;
+
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(180, 0, 0);
+    user-select: none;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);   
+    border: 2px solid black;
+    width: 800px;
+    height: 800px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cn {
+    background: #b58863;
+}
+
+.cb {
+    background: #f0d9b5;
+}
+
+i {
+    font-size: 400%;
+    cursor: pointer;
+}
